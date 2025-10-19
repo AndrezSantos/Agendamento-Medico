@@ -121,3 +121,4 @@ Cada uma possui navegação entre si via botões no topo da página.
 1. Clone o repositório:
    ```bash
    git clone https://github.com/AndrezSantos/sistema-agendamento.git
+ ** Os arquivos javascript deverão está na pasta JS, e imagens na pasta documentação.
