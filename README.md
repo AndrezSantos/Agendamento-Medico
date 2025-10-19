@@ -16,10 +16,8 @@ Este projeto simula o cadastro e agendamento de pacientes utilizando os conceito
 
 ## Como executar
 
-1. Instale o Node.js
-2. Clone o repositório
-3. Execute com: `node paciente.js`
-4. Para visualizar a interface, abra `cadastro-paciente.html` no navegador
+1. Clone o repositório
+2. abra `cadastro-paciente.html` no navegador
 
 ## Autor | Sobre
 
