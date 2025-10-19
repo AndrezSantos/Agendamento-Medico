@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Médico</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="js/medico.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>👨‍⚕️ Cadastro de Médico</h1>
+  </header>
+
+  <nav>
+    <button onclick="window.location.href='cadastro-paciente.html'">Paciente</button>
+    <button onclick="window.location.href='cadastro-medico.html'">Médico</button>
+    <button onclick="window.location.href='agendamento.html'">Agendamento</button>
+  </nav>
+
+  <section>
+    <h3>🩺 Informações do Médico</h3>
+    <label>Nome: <input type="text" id="nome-medico"></label>
+    <label>CRM: <input type="text" id="crm-medico"></label>
+    <label>Especialidade:
+      <select id="especialidade-medico">
+        <option value="">Selecione</option>
+        <option>ANGIOLOGISTA</option>
+        <option>AUDIOMETRIA</option>
+        <option>CABEÇA E PESCOÇO</option>
+        <option>CARDIOLOGISTA</option>
+        <option>DERMATO</option>
+        <option>FISIOTERAPIA</option>
+        <option>GASTRO</option>
+        <option>GINECOLOGISTA</option>
+        <option>MASTOLOGISTA</option>
+        <option>NEFROLOGISTA</option>
+        <option>NEUROLOGISTA</option>
+        <option>NEUROPEDIATRA</option>
+        <option>OFTALMOLOGISTA</option>
+        <option>ORTOPEDISTA</option>
+        <option>OTORRINO</option>
+        <option>PNEUMO</option>
+        <option>PROCTOLOGISTA</option>
+        <option>PSICOLOGO</option>
+        <option>REUMATO</option>
+        <option>UROLOGISTA</option>
+      </select>
+    </label>
+
+<div class="dias-horarios-wrapper">
+  <div class="dias-container">
+    <label>Dias de Atendimento:</label><br>
+    <label><input type="checkbox" value="Segunda"> Segunda</label>
+    <label><input type="checkbox" value="Terça"> Terça</label>
+    <label><input type="checkbox" value="Quarta"> Quarta</label>
+    <label><input type="checkbox" value="Quinta"> Quinta</label>
+    <label><input type="checkbox" value="Sexta"> Sexta</label>
+    <label><input type="checkbox" value="Sábado"> Sábado</label>
+    <label><input type="checkbox" value="Domingo"> Domingo</label>
+  </div>
+
+  <div class="horarios-container">
+    <label>Horários de Atendimento:</label><br>
+    <label><input type="checkbox" value="07:00"> 07:00</label>
+    <label><input type="checkbox" value="08:00"> 08:00</label>
+    <label><input type="checkbox" value="09:00"> 09:00</label>
+    <label><input type="checkbox" value="10:00"> 10:00</label>
+    <label><input type="checkbox" value="11:00"> 11:00</label>
+    <label><input type="checkbox" value="12:00"> 12:00</label>
+    <label><input type="checkbox" value="14:00"> 14:00</label>
+    <label><input type="checkbox" value="15:00"> 15:00</label>
+    <label><input type="checkbox" value="16:00"> 16:00</label>
+    <label><input type="checkbox" value="17:00"> 17:00</label>
+    <label><input type="checkbox" value="18:00"> 18:00</label>
+    <label><input type="checkbox" value="19:00"> 19:00</label>
+  </div>
+</div>
+
+    <label>Tipo de Atendimento:
+      <select id="tipo-atendimento">
+        <option value="">Selecione</option>
+        <option>Particular</option>
+        <option>SUS</option>
+      </select>
+    </label>
+
+    <button onclick="cadastrarMedico()">Cadastrar Médico</button>
+    <p id="mensagem-status" style="margin-top: 10px; font-weight: bold;"></p>
+  </section>
+
+  <section>
+    <h3>👨‍⚕️ Médicos Cadastrados</h3>
+    <table border="1">
+      <thead>
+        <tr><th>Nome</th><th>Especialidade</th><th>Dias</th><th>Horários</th><th>Tipo</th></tr>
+      </thead>
+      <tbody id="tabela-medicos"></tbody>
+    </table>
+  </section>
+
+  <footer style="margin-top: 40px; text-align: center; font-size: 14px; color: gray;">
+    <p>Desenvolvido por Andrez Santos — em transição para Desenvolvedor Full Stack</p>
+    <p>
+      <a href="https://github.com/AndrezSantos" target="_blank" style="margin-right: 15px; color: inherit;">
+        <i class="fab fa-github fa-lg"></i> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/andrez-santos-23836317/" target="_blank" style="color: inherit;">
+        <i class="fab fa-linkedin fa-lg"></i> LinkedIn
+      </a>
+    </p>
+  </footer>
+
+<script>
+  function alternarTema() {
+    document.body.classList.toggle("dark-mode");
+    localStorage.setItem("tema", document.body.classList.contains("dark-mode") ? "escuro" : "claro");
+  }
+
+  window.onload = () => {
+    if (localStorage.getItem("tema") === "escuro") {
+      document.body.classList.add("dark-mode");
+    }
+  };
+</script>
+
+</body>
+</html>
