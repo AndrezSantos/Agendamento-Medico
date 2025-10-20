@@ -6,7 +6,7 @@
   <title>Cadastro de Médico</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <script src="js/medico.js" defer></script>
+  <script src="JS/medico.js" defer></script>
 </head>
 <body>
   <header>
@@ -50,7 +50,7 @@
     </label>
 
 <div class="dias-horarios-wrapper">
-  <div class="dias-container">
+  <div class="dias-container" id="dias-atendimento">
     <label>Dias de Atendimento:</label><br>
     <label><input type="checkbox" value="Segunda"> Segunda</label>
     <label><input type="checkbox" value="Terça"> Terça</label>
@@ -61,7 +61,7 @@
     <label><input type="checkbox" value="Domingo"> Domingo</label>
   </div>
 
-  <div class="horarios-container">
+  <div class="horarios-container" id="horarios-atendimento">
     <label>Horários de Atendimento:</label><br>
     <label><input type="checkbox" value="07:00"> 07:00</label>
     <label><input type="checkbox" value="08:00"> 08:00</label>
@@ -127,4 +127,3 @@
 
 </body>
 </html>
-                  <label><input type="checkbox" value="19:00"> 19:00</label>
