@@ -47,7 +47,7 @@ input, select, textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-#nome, #endereco, #bairro, #cidade{
+#nome, #endereco, #bairro, #cidade, #nome-medico{
   width: 100%;
   max-width: 800px;
 }
