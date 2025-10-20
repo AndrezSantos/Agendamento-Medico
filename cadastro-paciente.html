@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Paciente</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="js/paciente.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <button onclick="alternarTema()" style="float: right; margin: 10px;">🌓 Tema</button>
+
+</head>
+<body>
+
+  <header>
+    <h1>📚 Aplicação de Estudos com OOP, JavaScript, Node.js, HTML, CSS</h1>
+    <h2>🏥 Aplicação Agendamento de Pacientes</h2>
+  </header>
+
+
+  <nav>
+    <button onclick="window.location.href='cadastro-paciente.html'">Paciente</button>
+    <button onclick="window.location.href='cadastro-medico.html'">Médico</button>
+    <button onclick="window.location.href='agendamento.html'">Agendamento</button>
+  </nav>
+
+  <section>
+    <h3>👤 Informações do Paciente</h3>
+    <label>Nome: <input type="text" id="nome"></label>
+    <label>Data de Nascimento: <input type="date" id="data-nascimento" onchange="calcularIdade()" width=30px></label>
+    <label>Idade: <input type="number" id="idade" readonly></label>
+    <label>CPF...: <input type="text" id="cpf"></label>
+    <label>Endereço: <input type="text" id="endereco"></label>
+    <label>Bairro.....: <input type="text" id="bairro"></label>
+    <label>Cidade....: <input type="text" id="cidade"></label>
+    <label>Estado....: <input type="text" id="estado"></label>
+    <label>Telefone: <input type="text" id="telefone"></label>
+    <button onclick="cadastrarPaciente()">Cadastrar Paciente</button>
+    <p id="mensagem-status" style="margin-top: 10px; font-weight: bold;"></p>
+  </section>
+
+  <section>
+    <h3>📋 Pacientes Cadastrados</h3>
+    <table border="1">
+      <thead>
+        <tr><th>Nome</th><th>Idade</th></tr>
+      </thead>
+      <tbody id="tabela-pacientes"></tbody>
+    </table>
+  </section>
+
+  <section>
+    <h3>🩺 Últimos Atendimentos</h3>
+    <table border="1">
+      <thead>
+        <tr><th>Data</th><th>Especialidade</th><th>Anamnese</th></tr>
+      </thead>
+      <tbody id="tabela-atendimentos"></tbody>
+    </table>
+  </section>
+
+  <footer style="margin-top: 40px; text-align: center; font-size: 14px; color: gray;">
+    <p>Desenvolvido por Andrez Santos — em transição para Desenvolvedor Full Stack</p>
+    <p>
+      <a href="https://github.com/AndrezSantos" target="_blank" style="margin-right: 15px; color: inherit;">
+        <i class="fab fa-github fa-lg"></i> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/andrez-santos-23836317/" target="_blank" style="color: inherit;">
+        <i class="fab fa-linkedin fa-lg"></i> LinkedIn
+      </a>
+    </p>
+  </footer>
+<script>
+  function alternarTema() {
+    document.body.classList.toggle("dark-mode");
+    localStorage.setItem("tema", document.body.classList.contains("dark-mode") ? "escuro" : "claro");
+  }
+
+  window.onload = () => {
+    if (localStorage.getItem("tema") === "escuro") {
+      document.body.classList.add("dark-mode");
+    }
+  };
+</script>
+
+
+</body>
+</html>

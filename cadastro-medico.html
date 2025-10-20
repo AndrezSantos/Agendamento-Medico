@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cadastro de Médico</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -86,7 +87,7 @@
     </label>
 
     <button onclick="cadastrarMedico()">Cadastrar Médico</button>
-    <p id="mensagem-status" style="margin-top: 10px; font-weight: bold;"></p>
+  <p id="mensagem-status" class="status-text"></p>
   </section>
 
   <section>
@@ -99,13 +100,13 @@
     </table>
   </section>
 
-  <footer style="margin-top: 40px; text-align: center; font-size: 14px; color: gray;">
+  <footer class="app-footer">
     <p>Desenvolvido por Andrez Santos — em transição para Desenvolvedor Full Stack</p>
     <p>
-      <a href="https://github.com/AndrezSantos" target="_blank" style="margin-right: 15px; color: inherit;">
+  <a href="https://github.com/AndrezSantos" target="_blank" rel="noopener" class="footer-link">
         <i class="fab fa-github fa-lg"></i> GitHub
       </a>
-      <a href="https://www.linkedin.com/in/andrez-santos-23836317/" target="_blank" style="color: inherit;">
+  <a href="https://www.linkedin.com/in/andrez-santos-23836317/" target="_blank" rel="noopener" class="footer-link">
         <i class="fab fa-linkedin fa-lg"></i> LinkedIn
       </a>
     </p>
@@ -126,3 +127,4 @@
 
 </body>
 </html>
+                  <label><input type="checkbox" value="19:00"> 19:00</label>
