@@ -18,12 +18,12 @@ Este projeto simula o cadastro e agendamento de pacientes utilizando os conceito
 
 1. Instale o Node.js
 2. Clone o repositório
-3. Execute com: `node index.js`
-4. Para visualizar a interface, abra `index.html` no navegador
+3. Execute com: `node paciente.js`
+4. Para visualizar a interface, abra `cadastro-paciente.html` no navegador
 
 ## Autor | Sobre
 
-Andrez Santos — desenvolvedor na década de 90 com Clipper e Visual Basic 6... Afastei da área em 2008 para atuar na administração orçamentária na construção. Nesse período criei algumas automações em VBA para Excel, e implantei sistemas de terceiros. Em 2020 tive um encontro com as metodologias Ágeis para aplicação também na área administrativa e financeira. Porém 2021 usei massivamente Google Sheet com AppScript, para uma empresa ao qual prestei serviços, o que naquele momento me motivou para estudar desenvolvimento web. Em 2024 fui contratado para secretaria de saúde para viabilizar soluções de fluxos de atendimentos e implantações de Sistemas do SUS - Sistema Únicio de Saúde. Desenvolvi automação para as unidades de Saúde  2025, com HTML e Appscript, uma solução gratuita e que resolveu 100% na velocidade e classificação de atendimentos prioritários. Neste mesmo ano iniciei uma formação FullStack em HTML, CSS, Javascript, Node.JS e React, ainda estou aprendendo a converter a semântica de codificação do passado às novas tecnologias. E decidi nesse novo desafio profissional, aos meus 51 anos, fazer 100% a minha transição de carreira para desenvolvedor Full Stack. 
+Andrez Santos — desenvolvedor da década de 90 com Clipper, migrando em 1996 para Visual Basic 6 for Windows... Afastei da área em 2008 para atuar na administração orçamentária da construção. Nesse período criei algumas automações em VBA para Excel, e implantei sistemas de terceiros. Em 2020 tive um encontro com as metodologias Ágeis para aplicação também na área administrativa e financeira. Porém 2021 usei massivamente Google Sheet com AppScript, para uma empresa ao qual prestei serviços, nesse momento me motivou para estudar desenvolvimento web. Em 2024 fui contratado para secretaria de saúde para viabilizar soluções de fluxos de atendimentos e implantações de Sistemas do SUS - Sistema Únicio de Saúde. Desenvolvi automação para as unidades de Saúde  2025, com HTML e Appscript, uma solução gratuita e que resolveu 100% na velocidade e classificação de atendimentos prioritários. Neste mesmo ano iniciei uma formação FullStack em HTML, CSS, Javascript, Node.JS e React, ainda estou aprendendo a converter a semântica de codificação do passado às novas tecnologias. E decidi nesse novo desafio profissional, aos meus 51 anos, fazer 100% a minha transição de carreira para desenvolvedor Full Stack. 
 
 ===
 
