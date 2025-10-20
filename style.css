@@ -62,6 +62,10 @@ input, select, textarea {
   max-width: 50px;
 }   
 
+#select-paciente, #select-medico{
+  width: 100%;
+  mas-width: 400px;
+}
 button {
   margin-top: 10px;
   padding: 10px 20px;
