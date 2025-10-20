@@ -1,0 +1,194 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  color: #f7f8fa;
+  background-color: rgb(60, 98, 201);
+}
+
+
+nav {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+nav button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #2980b9;
+}
+
+section {
+  margin-bottom: 0px; /*30*/
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+input, select, textarea {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#nome, #endereco, #bairro, #cidade{
+  width: 100%;
+  max-width: 800px;
+}
+
+#data-nascimento, #idade, #cpf, #telefone{
+ width: 100%;
+ max-width: 200px;
+}   
+
+#estado{
+  width: 100%;
+  max-width: 50px;
+}   
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #ecf0f1;
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: #3498db;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border: 1px solid #444;
+}
+
+body.dark-mode table {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode nav button,
+body.dark-mode button {
+  background-color: #444;
+  color: #f0f0f0;
+}
+
+body.dark-mode nav button:hover,
+body.dark-mode button:hover {
+  background-color: #666;
+}
+
+section label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+section select,
+section input[type="date"],
+section textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+section textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+section button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+section button:hover {
+  background-color: #005fa3;
+}
+
+.dias-horarios-wrapper {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.dias-container,
+.horarios-container {
+  flex: 1 1 250px;
+}
+
+.dias-container label,
+.horarios-container label {
+  display: block;
+  margin-bottom: 6px;
+}
