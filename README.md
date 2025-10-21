@@ -17,7 +17,7 @@ Este projeto simula o cadastro e agendamento de pacientes utilizando os conceito
 ## Como executar
 
 1. Clone o repositório
-2. abra `cadastro-paciente.html` no navegador
+2. abra `index.html` no navegador
 
 ## Autor | Sobre
 
